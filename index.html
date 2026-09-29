@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Programming Tutorial</title>
+
+```
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #f4f7fb;
+        color: #222;
+    }
+
+    header {
+        background: #306998;
+        color: white;
+        padding: 35px 20px;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    header p {
+        font-size: 18px;
+    }
+
+    nav {
+        background: #ffd43b;
+        padding: 12px;
+        text-align: center;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+    nav a {
+        color: #222;
+        text-decoration: none;
+        font-weight: bold;
+        margin: 0 12px;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    .container {
+        width: 90%;
+        max-width: 1000px;
+        margin: 30px auto;
+    }
+
+    section {
+        background: white;
+        padding: 30px;
+        margin-bottom: 25px;
+        border-radius: 12px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    h2 {
+        color: #306998;
+        margin-bottom: 15px;
+    }
+
+    h3 {
+        color: #444;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        margin-bottom: 15px;
+    }
+
+    ul {
+        margin-left: 25px;
+        margin-bottom: 15px;
+    }
+
+    code {
+        background: #eeeeee;
+        padding: 3px 6px;
+        border-radius: 4px;
+    }
+
+    pre {
+        background: #1e1e1e;
+        color: #f8f8f2;
+        padding: 18px;
+        border-radius: 8px;
+        overflow-x: auto;
+        margin: 15px 0;
+    }
+
+    .tip {
+        background: #fff8d6;
+        border-left: 5px solid #ffd43b;
+        padding: 15px;
+        margin-top: 15px;
+    }
+
+    .compiler {
+        padding: 10px;
+        background: #f1f1f1;
+        border-radius: 10px;
+    }
+
+    .compiler iframe {
+        width: 100%;
+        height: 600px;
+        border: none;
+        border-radius: 8px;
+    }
+
+    footer {
+        background: #306998;
+        color: white;
+        text-align: center;
+        padding: 25px;
+        margin-top: 30px;
+    }
+
+    .button {
+        display: inline-block;
+        background: #306998;
+        color: white;
+        padding: 10px 18px;
+        border-radius: 6px;
+        text-decoration: none;
+        margin-top: 10px;
+    }
+
+    .button:hover {
+        background: #24527a;
+    }
+
+    @media (max-width: 700px) {
+        header h1 {
+            font-size: 30px;
+        }
+
+        nav a {
+            display: inline-block;
+            margin: 5px;
+        }
+
+        section {
+            padding: 20px;
+        }
+    }
+</style>
+```
+
+</head>
+
+<body>
+
+```
+<!-- Header -->
+<header>
+    <h1>Python Programming Tutorial</h1>
+    <p>A Simple Beginner's Guide to Python Programming</p>
+</header>
+
+<!-- Navigation -->
+<nav>
+    <a href="#introduction">Introduction</a>
+    <a href="#syntax">Syntax</a>
+    <a href="#variables">Variables</a>
+    <a href="#conditions">Conditions</a>
+    <a href="#loops">Loops</a>
+    <a href="#functions">Functions</a>
+    <a href="#compiler">Compiler</a>
+</nav>
+
+<main class="container">
+
+    <!-- Introduction -->
+    <section id="introduction">
+        <h2>1. Introduction to Python</h2>
+
+        <p>
+            Python is a high-level, interpreted programming language known
+            for its simple and readable syntax. It is commonly used for
+            web development, data analysis, automation, artificial
+            intelligence, and many other applications.
+        </p>
+
+        <h3>Why Learn Python?</h3>
+
+        <ul>
+            <li>Easy to learn and understand</li>
+            <li>Simple and readable syntax</li>
+            <li>Useful for beginners and professionals</li>
+            <li>Used in many areas of technology</li>
+            <li>Has a large community and many libraries</li>
+        </ul>
+
+        <div class="tip">
+            <strong>Tip:</strong> Practice writing small Python programs
+            regularly to improve your programming skills.
+        </div>
+    </section>
+
+    <!-- Basic Syntax -->
+    <section id="syntax">
+        <h2>2. Basic Python Syntax</h2>
+
+        <p>
+            Python uses indentation to organize blocks of code. Unlike
+            some programming languages, Python does not require curly
+            brackets for code blocks.
+        </p>
+
+        <h3>Hello World</h3>
+
+        <pre><code>print("Hello, World!")</code></pre>
+
+        <p>
+            The <code>print()</code> function displays information on the
+            screen.
+        </p>
+
+        <h3>Example</h3>
+
+        <pre><code>print("Welcome to Python!")
+```
+
+print("I am learning programming.")</code></pre> </section>
+
+```
+    <!-- Variables -->
+    <section id="variables">
+        <h2>3. Variables</h2>
+
+        <p>
+            Variables are used to store information in a program. In
+            Python, you can create a variable by giving it a name and
+            assigning a value.
+        </p>
+
+        <h3>Example</h3>
+
+        <pre><code>name = "Christian"
+```
+
+age = 19
+
+print(name)
+print(age)</code></pre>
+
+```
+        <p>
+            In this example, <code>name</code> stores text while
+            <code>age</code> stores a number.
+        </p>
+
+        <h3>Common Data Types</h3>
+
+        <ul>
+            <li><strong>String:</strong> Text such as "Hello"</li>
+            <li><strong>Integer:</strong> Whole numbers such as 10</li>
+            <li><strong>Float:</strong> Decimal numbers such as 3.14</li>
+            <li><strong>Boolean:</strong> True or False values</li>
+        </ul>
+
+        <pre><code>name = "Alice"
+```
+
+age = 20
+height = 1.65
+student = True</code></pre> </section>
+
+```
+    <!-- Conditions -->
+    <section id="conditions">
+        <h2>4. If-Else Statements</h2>
+
+        <p>
+            Conditional statements allow a program to make decisions
+            based on whether a condition is true or false.
+        </p>
+
+        <h3>Example</h3>
+
+        <pre><code>age = 18
+```
+
+if age >= 18:
+print("You are an adult.")
+else:
+print("You are a minor.")</code></pre>
+
+```
+        <p>
+            The <code>if</code> statement checks the condition. If the
+            condition is false, the <code>else</code> statement runs.
+        </p>
+    </section>
+
+    <!-- Loops -->
+    <section id="loops">
+        <h2>5. Loops</h2>
+
+        <p>
+            Loops allow you to repeat a block of code multiple times.
+            Python commonly uses <code>for</code> and <code>while</code>
+            loops.
+        </p>
+
+        <h3>For Loop</h3>
+
+        <pre><code>for number in range(5):
+print(number)</code></pre>
+
+        <p>
+            This program prints the numbers from 0 to 4.
+        </p>
+
+        <h3>While Loop</h3>
+
+        <pre><code>count = 1
+```
+
+while count <= 5:
+print(count)
+count += 1</code></pre> </section>
+
+```
+    <!-- Functions -->
+    <section id="functions">
+        <h2>6. Functions</h2>
+
+        <p>
+            A function is a reusable block of code that performs a
+            specific task.
+        </p>
+
+        <h3>Example</h3>
+
+        <pre><code>def greet(name):
+print("Hello, " + name)
+```
+
+greet("Christian")</code></pre>
+
+```
+        <p>
+            The <code>def</code> keyword is used to create a function.
+            The function can then be called whenever it is needed.
+        </p>
+    </section>
+
+    <!-- Mini Project -->
+    <section>
+        <h2>7. Simple Python Program</h2>
+
+        <p>
+            Here is a simple program that asks the user for their name
+            and age.
+        </p>
+
+        <pre><code>name = input("Enter your name: ")
+```
+
+age = int(input("Enter your age: "))
+
+print("Hello,", name)
+
+if age >= 18:
+print("You are an adult.")
+else:
+print("You are a minor.")</code></pre>
+
+```
+        <p>
+            This example combines variables, user input, output, and
+            conditional statements.
+        </p>
+    </section>
+
+    <!-- Online Compiler -->
+    <section id="compiler">
+        <h2>8. Try Python Online</h2>
+
+        <p>
+            You can practice Python directly below using an online
+            compiler. Write your Python code and run it to see the
+            result.
+        </p>
+
+        <div class="compiler">
+            <iframe
+                src="https://www.programiz.com/python-programming/online-compiler/"
+                title="Online Python Compiler">
+            </iframe>
+        </div>
+
+        <p>
+            You can also open the compiler in a new tab:
+        </p>
+
+        <a
+            class="button"
+            href="https://www.programiz.com/python-programming/online-compiler/"
+            target="_blank">
+            Open Python Compiler
+        </a>
+    </section>
+
+    <!-- Conclusion -->
+    <section>
+        <h2>9. Conclusion</h2>
+
+        <p>
+            Python is a beginner-friendly programming language that can
+            be used to create many different types of applications.
+            Learning the basics of syntax, variables, conditions, loops,
+            and functions provides a strong foundation for further
+            programming.
+        </p>
+
+        <p>
+            The best way to learn Python is through practice. Try
+            modifying the examples on this page and create your own
+            simple programs.
+        </p>
+    </section>
+
+</main>
+
+<!-- Footer -->
+<footer>
+    <p>Python Programming Tutorial</p>
+    <p>Created for a Web Development Activity</p>
+</footer>
+```
+
+</body>
+</html>
